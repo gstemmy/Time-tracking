@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Blue: hsl(246, 80%, 60%);
+
+--Light-red /*(work)*/: hsl(15, 100%, 70%);
+--Soft-blue /*(play)*/: hsl(195, 74%, 62%);
+--Light-red /*(study)*/: hsl(348, 100%, 68%);
+--Lime-green /*(exercise)*/: hsl(145, 58%, 55%);
+--Violet /*(social)*/: hsl(264, 64%, 52%);
+--Soft-orange /*(self care)*/: hsl(43, 84%, 65%);
+
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    margin: auto;
+    padding: 70px;
+    background: var(--Very-dark-blue);
+}
+header{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.box{
+    background: var(--Dark-blue);
+    grid-row: 1 /-1;
+    border-radius: 10px;
+}
+.image{
+    background: #fff;
+    padding: 2.5px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.brand{
+    background: var(--Desaturated-blue);
+    border-radius: 10px;
+    padding: 10px 0 40px 10px;
+}
+.text, .box-1{
+    margin: 20px; 
+}
+.hrs{
+    font-size: 50px;
+}
+.week{
+    color: var(--Pale-Blue);
+    font-size: 10px;
+    margin: 10px 0;
+}
+.row{
+    background: var(--Dark-blue);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.row .hrs{
+    margin: 20px 0;
+}
+.col{
+    background: var(--Light-red);
+    
+}
+.grid{
+    border-radius: 10px;
+}
+.col1{
+    background: var(--Soft-blue);
+}
+.col2{
+    background: var(--Light-red);
+}
+.col3{
+    background: var(--Lime-green);
+}
+.col4{
+    background: var(--Violet);
+}
+.col5{
+    background: var(--Soft-orange);
+}
+h4{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.game{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width: 375px){
+    body{
+        padding: 20px;
+    }
+    header{
+        display: block;
+    }
+    .image{
+        padding: 2.3px;
+        width: 57px;
+        height: 55px;
+        margin: 0 20px 0 10px ;
+    }
+    .brand, .box-1, .col-3{
+        display: flex;
+        align-items: center;
+    }
+    .weeks{
+        display: flex;
+        gap: 2px;
+    }
+    .hrs, .hrs1, h4{
+        font-size: 20px;
+    }
+    .text{
+        margin-left: -10px;
+    }
+    .box-1, .col-3{
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .box{
+        padding-bottom: 5px;
+    }
+    .brand{
+        padding: 2px 0 2px 0;
+    }
+    .grid{
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+}
+/* - Mobile: 375px
+- Desktop: 1440px */
